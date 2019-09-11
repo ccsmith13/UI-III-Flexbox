@@ -63,4 +63,256 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+address{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+footer{
+	display:block;
+	margin-left: 5%;
+}
+
+nav{
+	background-color: skyblue;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
+a{
+	color: gray;
+	text-decoration: none;
+}
+
+.servicesfooter{
+	display: flex;
+}
+
+.navitem{
+	margin-right: 4%;
+	color: gray;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+}
+
+.logo{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 4%;
+}
+
+.titlesection{
+	display: flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	align-items: center;
+	font-size: 85px;
+	text-align: center;
+	margin-top:15%;
+}
+.titlesectionleft{
+	width: 50%;
+	align-items: center;
+}
+.titlesectionright{
+	width: 50%;
+	margin-bottom: 5%;
+}
+.getstarted{
+	border: 1px solid grey;
+	width: 150px;
+	height: 40px;
+	padding: 10px;
+	align-items: center;
+}
+.start{
+	margin-bottom: 5%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-family: "Titillium Web";
+	font-size: 20px;
+	text-align: center;
+}
+.middle-img{
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+@keyframes example {
+  from {background-color: white;}
+  to {background-color: skyblue;}
+}
+
+@keyframes example1 {
+  from {background-color: skyblue;}
+  to {background-color: white;}
+}
+.getstarted:hover{
+  animation-name: example;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+a:hover{
+  animation-name: example1;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+.learnmorebox:hover{
+  animation-name: example;
+  animation-duration: 0.75s;
+  animation-fill-mode: forwards;
+}
+
+.textblock{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 2%;
+}
+.description{
+	font-family: "Chilanka";
+	width: 45%;
+}
+.description2{
+	margin-top: 5%;
+	width: 30%;
+	font-family: "Chilanka";
+}
+.linebreak{
+	border-bottom: 1px solid grey;
+	margin-top: 0%;
+	margin-bottom: 4%;
+	margin-left: 4%;
+	margin-right: 4%;
+}
+.copyright{
+	text-align:center;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.services-header-img{
+	margin: 4% 4% 2% 4%;
+	width: 90%;
+}
+.servicestitle{
+	margin-left: 4%;
+	margin-bottom: 2%;
+	font-size: 25px;
+}
+.servicestxt{
+	text-align: left;
+	font-family:"Chilanka";
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-bottom: 2%;
+}
+.servicetxtsection{
+	display: flex;
+	justify-content: space-between;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.servicebox{
+	border: 1px solid grey;
+	padding: 2%;
+	margin: 0% 2% 4% 2%;
+	background-color: lightyellow;
+}
+.servicebody{
+	margin-bottom: 4%;
+}
+.learnmorebox{
+	border: 1px solid grey;
+	padding: 4% 0% 4% 0%;;
+	width: 175px;
+	height: 45px;
+	background-color:white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.servicesfooter{
+	margin-left: 4%;
+	margin-right: 4%;
+}
+.servicesfooter ul{
+  list-style-type: square;
+  margin-top: 4%;
+  margin-bottom: 1%;
+  margin-left: 4%;
+  margin-right: 0;
+  padding-left: 4%;
+}
+.servicesfooter ul li{
+	margin-bottom: 2%;
+}
+.servicesfooter p{
+	margin-right: 4%;
+}
+.abouttopsection{
+	margin-top: 5%;
+	margin-bottom: 2.5%;
+}
+.abouttopsection h1{
+	font-size: 40px;
+	text-align: center;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+.abouttopsection h2{
+	font-size: 30px;
+}
+.abouttopsection h2 p{
+	font-size: 20px;
+}
+.aboutmiddle{
+	background: #B3E0DB;
+}
+.aboutmiddle h2{
+	font-size: 30px;
+	text-align: center;
+	padding: 2% 0% 2% 0%;
+}
+.headshot{
+	width: 300px;
+	height: 200px;
+	border-radius: 5px;
+	margin-bottom: 2%;
+	margin-right: 1%;
+}
+.teammember{
+	display: flex;
+}
+.membertitle{
+	display:flex;
+	flex-flow: column wrap;
+	width: 20%;
+	height:100%;
+	color: white;
+	background: #3C474B;
+	margin-right: 2%;
+	padding: 1% 1% 1% 1%;
+	border-radius: 5px;
+}
+.membertitle h3{
+	font-size: 30px;
+}
+.membertitle h4{
+	font-size: 25px;
+}
+.employeeabout{
+	width: 50%;
+	height: 30%;
+	border-radius: 10px;
+}
